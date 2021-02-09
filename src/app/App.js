@@ -39,7 +39,7 @@ export default function App() {
           outerScale={5}
         />
       </div>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <ScrollToTop>
           <Headermain />
           <Switch>
