@@ -2,7 +2,7 @@
 
 A simple Portfolio template for developer/designers built with React. 
 
-### [live preview](https://ubai97.github.io/react-portfolio/)
+### [live preview](https://ubaimutl.github.io/react-portfolio/)
 
 ![react portfoiio](src/assets/images/react-porfolio.png)
 
@@ -10,7 +10,7 @@ A simple Portfolio template for developer/designers built with React.
 
 Get the code.
 
- `git clone https://github.com/ubai97/react-portfolio.git`
+ `git clone https://github.com/ubaimutl/react-portfolio.git`
  
 Install required dependencies
 
