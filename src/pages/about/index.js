@@ -10,17 +10,14 @@ import {
   services,
 } from "../../content_option";
 
-export default function About() {
+export const About = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
           <title> About | {meta.title}</title>
-          <meta
-            name="description"
-            content={meta.description}
-          />
+          <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3">
           <Col lg="8">
@@ -100,4 +97,4 @@ export default function About() {
       </Container>
     </HelmetProvider>
   );
-}
+};

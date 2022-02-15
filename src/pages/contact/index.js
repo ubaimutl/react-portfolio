@@ -6,7 +6,7 @@ import { meta } from "../../content_option";
 import { Container, Row, Col, Alert } from "react-bootstrap";
 import { contactConfig } from "../../content_option";
 
-export default function ContactUs() {
+export const ContactUs = () => {
   const [formData, setFormdata] = useState({
     email: "",
     name: "",
@@ -83,7 +83,9 @@ export default function ContactUs() {
             <Alert
               //show={formData.show}
               variant={formData.variant}
-              className={`rounded-0 co_alert ${formData.show ? "d-block" : "d-none"}`}
+              className={`rounded-0 co_alert ${
+                formData.show ? "d-block" : "d-none"
+              }`}
               onClose={() => setFormdata({ show: false })}
               dismissible
             >
@@ -159,7 +161,7 @@ export default function ContactUs() {
           </Col>
         </Row>
       </Container>
-      <div className={formData.loading ?"loading-bar" : "d-none"}></div>
+      <div className={formData.loading ? "loading-bar" : "d-none"}></div>
     </HelmetProvider>
   );
-}
+};
