@@ -5,7 +5,7 @@ import Typical from "react-typical";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export const Home = () => {
   return (
     <HelmetProvider>
       <section id="home" className="home">
@@ -63,4 +63,4 @@ export default function Home() {
       </section>
     </HelmetProvider>
   );
-}
+};

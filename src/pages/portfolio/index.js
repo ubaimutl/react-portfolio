@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 
-function Portfolio() {
+export const Portfolio = () => {
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -35,6 +35,4 @@ function Portfolio() {
       </Container>
     </HelmetProvider>
   );
-}
-
-export default Portfolio;
+};
