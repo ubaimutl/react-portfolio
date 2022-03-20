@@ -1,11 +1,31 @@
-.page {
-    position: relative;
+@media only screen and (max-width: 991px) {
+    .s_c {
+        padding-top: 40px;
+    }
 }
 
-.page>div {
+.page-enter {
+    transform: translateY(100%);
+}
+
+.page-enter-active {
+    transform: translateY(0%);
+    transition: all 400ms ease-out;
+}
+
+.page-exit {
+    transform: translateY(0%);
     position: absolute;
-    background: var(--bg-color);
     left: 0;
     right: 0;
     top: 0;
+}
+
+.page-exit-active {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(-130%);
+    transition: all 400ms ease-out;
 }

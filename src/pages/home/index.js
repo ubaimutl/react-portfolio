@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typical from "react-typical";
+import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
@@ -24,17 +24,17 @@ export const Home = () => {
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
                 <h1 className="fluidz-48 mb-1x">
-                  <Typical
-                    steps={[
-                      introdata.animated.first,
-                      1000,
-                      introdata.animated.second,
-                      1000,
-                      introdata.animated.third,
-                      1000,
-                    ]}
-                    loop={Infinity}
-                    wrapper="p"
+                  <Typewriter
+                    options={{
+                      strings: [
+                        introdata.animated.first,
+                        introdata.animated.second,
+                        introdata.animated.third,
+                      ],
+                      autoStart: true,
+                      loop: true,
+                      deleteSpeed: 10,
+                    }}
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
