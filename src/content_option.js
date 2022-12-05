@@ -1,17 +1,18 @@
-const logotext = "JOHN";
+const logotext = "Team 5";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Zanzibar Site",
+    description: "This is the project presentation website for team 5's Zanzibar program",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "Team 5",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "Nick Foley",
+        second: "Matthew McCabe",
+        third: "Jaime Reyes",
+        fourth: "Alejandro Zertuche"
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: 'Team 5 came together to create a program that incorporates python GUI packages, a "big data" manipulation package, and a few more personal touches',
     your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
 };
 
@@ -148,11 +149,7 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
-    youtube: "https://youtube.com",
-    twitch: "https://twitch.com",
+    gitlab: "https://gitlab.com",
 };
 export {
     meta,
