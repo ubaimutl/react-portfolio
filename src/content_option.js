@@ -151,8 +151,6 @@ const socialprofils = {
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
-    youtube: "https://youtube.com",
-    twitch: "https://twitch.com",
 };
 export {
     meta,

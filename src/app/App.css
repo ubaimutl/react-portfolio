@@ -29,3 +29,14 @@
     transform: translateY(-130%);
     transition: all 400ms ease-out;
 }
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1140px;
+    }
+}

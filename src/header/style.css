@@ -179,7 +179,12 @@
     position: relative;
     transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
     padding: 4px 0px;
+    text-decoration: none;
     font-family: Marcellus;
+}
+
+.the_menu .menu_item>a:hover {
+    color: var(--text-color-3);
 }
 
 @media (min-width: 768px) {
@@ -198,4 +203,5 @@
 .menu_footer a {
     color: var(--text-color-2);
     margin-right: 10px;
+    text-decoration: none;
 }

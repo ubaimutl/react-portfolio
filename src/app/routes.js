@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
-
+import { Route, Routes} from "react-router-dom";
+import withRouter from "../hooks/withRouter"
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
@@ -8,7 +8,7 @@ import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-const AnimatedSwitch = withRouter(({ location }) => (
+const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
     <CSSTransition
       key={location.key}
@@ -19,13 +19,13 @@ const AnimatedSwitch = withRouter(({ location }) => (
       classNames="page"
       unmountOnExit
     >
-      <Switch location={location}>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/portfolio" component={Portfolio} />
-        <Route path="/contact" component={ContactUs} />
-        <Route path="*" component={Home} />
-      </Switch>
+      <Routes location={location}>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="*" element={<Home />} />
+      </Routes>
     </CSSTransition>
   </TransitionGroup>
 ));
@@ -33,7 +33,7 @@ const AnimatedSwitch = withRouter(({ location }) => (
 function AppRoutes() {
   return (
     <div className="s_c">
-      <AnimatedSwitch />
+      <AnimatedRoutes />
       <Socialicons />
     </div>
   );
