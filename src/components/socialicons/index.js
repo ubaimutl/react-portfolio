@@ -3,6 +3,7 @@ import "./style.css";
 import {
   FaPatreon,
   FaFlickr,
+  FaBandcamp,
   FaGithub,
   FaYoutube,
   FaInstagram,
@@ -26,6 +27,13 @@ export const Socialicons = (params) => {
           <li>
             <a href={socialprofils.flickr}>
               <FaFlickr />
+            </a>
+          </li>
+        )}
+        {socialprofils.bandcamp && (
+          <li>
+            <a href={socialprofils.bandcamp}>
+              <FaBandcamp />
             </a>
           </li>
         )}
