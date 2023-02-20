@@ -1,3 +1,3 @@
-yarn installgot 
+yarn install
 
 yarn start
