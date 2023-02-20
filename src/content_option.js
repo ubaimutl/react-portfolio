@@ -11,7 +11,7 @@ const introdata = {
         second: "... never simply a feeling.",
         third: "~ bell hooks",
     },
-    description: "WRITER | PHOTOGRAPHER | MUSICIAN | MECHANIC | DEVELOPER",
+    description: "WRITER | PHOTOGRAPHER | MECHANIC | DEVELOPER",
     your_img_url: "https://live.staticflickr.com/65535/52687599222_974c15b82f_6k.jpg",
 };
 
