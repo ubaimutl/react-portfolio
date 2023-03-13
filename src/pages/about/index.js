@@ -5,9 +5,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   dataabout,
   meta,
-  worktimeline,
-  skills,
-  services,
 } from "../../content_option";
 
 export const About = () => {
@@ -35,8 +32,7 @@ export const About = () => {
             </div>
           </Col>
         </Row>
-
-
+        <h4 className="display-10 mb-4">For any questions, email us at berkeleyskateclub@gmail.com </h4>
       </Container>
     </HelmetProvider>
   );

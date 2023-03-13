@@ -7,11 +7,13 @@ import im6 from ".//assets/images/page 14b.JPG";
 import im7 from ".//assets/images/page 16a.JPG";
 import im8 from ".//assets/images/page i.JPG";
 import im9 from ".//assets/images/page15a.JPG";
+import zine1 from ".//assets/images/ZIne.jpg"
 
 const logotext = "SK8@Cal";
 const meta = {
-  title: "John Doe",
+  title: "Sk8@cal",
   description: "UC Berkeley's Skating Orgnaization",
+  
 };
 
 const introdata = {
@@ -30,6 +32,14 @@ const dataabout = {
   aboutme:
     "Skateboarding at Berkeley founded in 2021 is UC Berkeley’s only skateboarding organization out of 1000+ student-led groups on campus. We teach students how to skate, organize collegiate skate events, and host annual skate competitions. Our impact comes from helping people with their physical and mental wellbeing by facilitating creative expressions through skateboarding.",
 };
+
+const zine = [
+  {
+    img: zine1,
+    desctiption:
+      "",
+  },
+];
 
 const dataportfolio = [
   {
@@ -74,18 +84,6 @@ const dataportfolio = [
   },
 ];
 
-const contactConfig = {
-  YOUR_EMAIL: "name@domain.com",
-  YOUR_FONE: "(555)123-4567",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-  YOUR_SERVICE_ID: "service_id",
-  YOUR_TEMPLATE_ID: "template_id",
-  YOUR_USER_ID: "user_id",
-};
-
 const socialprofils = {
   instagram: "https://www.instagram.com/skateboardingatberkeley/",
 };
@@ -94,7 +92,7 @@ export {
   dataabout,
   dataportfolio,
   introdata,
-  contactConfig,
+  zine,
   socialprofils,
   logotext,
 };

@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
-import im1 from "/Users/mohammedabed/Desktop/sk8/sk8rs-cal/src/assets/images/17a.JPG";
+import im1 from "/Users/mohammedabed/Desktop/sk8/sk8rs-cal/src/assets/images/page15a.JPG";
 
 export const Home = () => {
   return (
@@ -12,7 +12,7 @@ export const Home = () => {
       <section id="home" className="home">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> {meta.title}</title>
+          <title> Sk8</title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
@@ -33,7 +33,7 @@ export const Home = () => {
                       ],
                       autoStart: true,
                       loop: true,
-                      deleteSpeed: 10,
+                      deleteSpeed: 5,
                     }}
                   />
                 </h1>
@@ -47,7 +47,7 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
-                  <Link to="/contact">
+                  <Link to="/zine">
                     <div id="button_h" className="ac_btn btn">
                       Zine
                       <div className="ring one"></div>
