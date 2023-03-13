@@ -1,14 +1,24 @@
-import React from "react";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
+import './style.css';
+
+import React from 'react';
+
+import {
+  Col,
+  Container,
+  Row,
+} from 'react-bootstrap';
+import {
+  Helmet,
+  HelmetProvider,
+} from 'react-helmet-async';
+
 import {
   dataabout,
   meta,
-  worktimeline,
-  skills,
   services,
-} from "../../content_option";
+  skills,
+  worktimeline,
+} from '../../content_option';
 
 export const About = () => {
   return (

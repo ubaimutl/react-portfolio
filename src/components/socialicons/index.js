@@ -1,14 +1,17 @@
-import React from "react";
-import "./style.css";
+import './style.css';
+
+import React from 'react';
+
 import {
-  FaGithub,
-  FaTwitter,
   FaFacebookF,
+  FaGithub,
   FaLinkedin,
-  FaYoutube,
   FaTwitch,
-} from "react-icons/fa";
-import { socialprofils } from "../../content_option";
+  FaTwitter,
+  FaYoutube,
+} from 'react-icons/fa';
+
+import { socialprofils } from '../../content_option';
 
 export const Socialicons = (params) => {
   return (

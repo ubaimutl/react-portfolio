@@ -1,8 +1,21 @@
-import React from "react";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import { Container, Row, Col } from "react-bootstrap";
-import { dataportfolio, meta } from "../../content_option";
+import './style.css';
+
+import React from 'react';
+
+import {
+  Col,
+  Container,
+  Row,
+} from 'react-bootstrap';
+import {
+  Helmet,
+  HelmetProvider,
+} from 'react-helmet-async';
+
+import {
+  dataportfolio,
+  meta,
+} from '../../content_option';
 
 export const Portfolio = () => {
   return (

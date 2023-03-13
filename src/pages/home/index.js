@@ -1,9 +1,18 @@
-import React from "react";
-import "./style.css";
-import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "typewriter-effect";
-import { introdata, meta } from "../../content_option";
-import { Link } from "react-router-dom";
+import './style.css';
+
+import React from 'react';
+
+import {
+  Helmet,
+  HelmetProvider,
+} from 'react-helmet-async';
+import { Link } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
+
+import {
+  introdata,
+  meta,
+} from '../../content_option';
 
 export const Home = () => {
   return (
