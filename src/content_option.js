@@ -1,74 +1,64 @@
-const logotext = "JOHN";
+const logotext = "MADELEINE";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Madeleine Estefay Adinugroho",
+    description: "I’m Madeleine, a student in SMA Karangturi.",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Madeleine",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I love designing",
+        second: "I design cool websites",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "I'm a designer in an organtization in SMA Karangturi, called Karangturi Magazines or KMagz.",
+    your_img_url: "/images/madeleine.jpg",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "a bit about my self",
+    aboutme: "I am a very introverted person, but I am noisy once I'm with people I feel comfortable with. I have a few hobbies, like crocheting, photography, videography, editing, and desgining. I tend to get bored easily, that is why I always try to learn new things and maybe even find a new hobby. Fun fact, I really love animals, especially cats, dogs, and rabbits. In fact, I actually have a pet rabbit called Sachi.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Designer",
+        where: "KMagz",
+        date: "2023",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Designer",
+        where: "Class Poem Book",
+        date: "2023",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Canva",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
+        name: "Picsart",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "Wordpress",
+        value: 75,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "Vercel",
+        value: 60,
     },
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "Canva Poster Design",
+        description: "I do unique canva poster designs that is different from any other templates.",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        title: "PPT Design",
+        description: "I do unique PPT designs that is different from any other templates.",
     },
     {
         title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+        description: "I can do unique Wordpress designs from scratch, and is different from any other templates.",
     },
 ];
 
