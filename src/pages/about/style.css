@@ -45,6 +45,10 @@
     color: var(--text-color);
 }
 
+.about {
+   text-align: justify;
+}
+
 @-webkit-keyframes animate-positive {
     0% {
         width: 0%;

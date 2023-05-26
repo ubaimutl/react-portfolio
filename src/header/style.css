@@ -4,6 +4,10 @@
     padding-right: 10px;
 }
 
+.logo {
+ width: 7%;   
+}
+
 .menu__button {
     color: var(--text-color);
 }
