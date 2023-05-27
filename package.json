@@ -1,4 +1,5 @@
 {
+    "homepage": "https://nikaishere.github.io/amaialada.github.io/",
     "name": "react-portfolio",
     "version": "0.1.0",
     "private": true,
@@ -21,7 +22,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "predeploy": "yarn build && cp build/index.html build/404.html",
+        "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
@@ -41,5 +42,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "gh-pages": "^5.0.0"
     }
 }
