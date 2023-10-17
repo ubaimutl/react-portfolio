@@ -1,60 +1,64 @@
-const logotext = "JOHN";
+const logotext = "Ivanouo";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Ivan's Page",
+    description: "I'm Ivan, majoring in CS at National Tsing Hua University",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I'm Ivan",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I love coding !!",
+        second: "Poker lover !!",
+        third: "Play volleyball with me !!",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Now, I'm a graduate student marjoring in CS at National Tsing Hua University.",
+    your_img_url: "https://i.imgur.com/G6f95oo.jpg",
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    title: "About myself",
+    aboutme: "I am a outgoing person, thus I enjoy making new friends and talking to them. Besides, I like coding very much. Solving a problem with program is my interest. For me, the world is full of surprises and challenges, making me feel excited to embrace them.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
+        jobtitle: "Intern",
+        where: "Industrial Technology Research Institute (ITRI)",
         date: "2020",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Intern",
+        where: "ASUS AICS",
+        date: "2022",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Cloud Product Developer Summer Intern",
+        where: "Synology",
+        date: "2022",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "C",
         value: 90,
     },
     {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
+        name: "C++",
         value: 80,
     },
     {
-        name: "React",
-        value: 60,
+        name: "Python",
+        value: 80,
     },
     {
-        name: "Jquery",
-        value: 85,
+        name: "Javascript",
+        value: 70,
+    },
+    {
+        name: "Golang",
+        value: 70,
+    },
+    {
+        name: "Vue",
+        value: 70,
     },
 ];
 
@@ -136,8 +140,8 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
+    YOUR_EMAIL: "contact@ivanouo.one",
+    YOUR_FONE: "0909306616",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
