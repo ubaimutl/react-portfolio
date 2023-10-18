@@ -25,6 +25,10 @@
     max-width: 100%;
 }
 
+.po_item h3 {
+    color:brown;
+}
+
 .po_item .content {
     position: absolute;
     height: 0;
