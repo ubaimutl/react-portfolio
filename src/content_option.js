@@ -1,4 +1,4 @@
-const logotext = "JOHN";
+const logotext = '<img src="img/logo.jpg" alt="Logo Image">';
 const meta = {
     title: "Jaskirat Singh",
     description: "I’m Jaskirat Singh data scientist _ Full stack devloper,currently working in Berlin",
@@ -7,12 +7,12 @@ const meta = {
 const introdata = {
     title: "I’m Jaskirat Singh",
     animated: {
-        first: "I love coding again",
+        first: "I love coding",
         second: "I code cool websites",
         third: "I develop mobile apps",
     },
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: '<img src="img/jas_portfolio.jpg" alt="Logo Image">',
 };
 
 const dataabout = {
