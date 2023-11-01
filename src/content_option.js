@@ -1,13 +1,13 @@
 const logotext = "JOHN";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Jaskirat Singh",
+    description: "I’m Jaskirat Singh data scientist _ Full stack devloper,currently working in Berlin",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Jaskirat Singh",
     animated: {
-        first: "I love coding",
+        first: "I love cod",
         second: "I code cool websites",
         third: "I develop mobile apps",
     },
