@@ -1,4 +1,4 @@
-const logotext = '<img src="img/logo.jpg" alt="Logo Image">';
+const logotext = '<img src="./img/jas_portfolio.jpg" alt="Logo Image">';
 const meta = {
     title: "Jaskirat Singh",
     description: "I’m Jaskirat Singh data scientist _ Full stack devloper,currently working in Berlin",
