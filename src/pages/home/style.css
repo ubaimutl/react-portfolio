@@ -46,7 +46,7 @@ section {
 
 .intro_sec .text,
 .intro_sec .h_bg-image {
-    width: 50%;
+    width: 45%;
 }
 
 @media (max-width:991.98px) {
@@ -93,8 +93,8 @@ section {
 
 .intro_sec .h_bg-image {
     background-size: cover;
-    background-position: center;
-    min-height: 700px;
+    background-position: center top;
+    max-height: 620px;
     position: relative;
 }
 
@@ -229,6 +229,13 @@ section {
     color: var(--text-color)
 }
 
-.intro_sec .h_bg-image {
+/* .intro_sec .h_bg-image {
     filter: saturate(0.5);
+    -webkit-filter:;
+} */
+
+.intro_sec .h_bg-image {
+    border-radius: 30rem;
+    
 }
+

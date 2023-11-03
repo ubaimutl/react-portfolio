@@ -1,20 +1,21 @@
-import jas_pic from "./assets/images/jas_pic.jpg"
+// import logo1 from "./assets/images/logo2.png";
+import jas_pic from "./assets/images/jas_pic.png";
 
-const logotext = "Jaskirat Singh";
+const logotext = "J Singh";
 const meta = {
     title: "Jaskirat Singh",
     description: "I’m Jaskirat Singh Web Designer and Developer _ Full stack devloper,currently working in Berlin",
 };
 
 const introdata = {
-    title: "I’m Jaskirat Singh",
+    title: "Hi, I’m Jaskirat",
 
 animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I love coding . . .",
+        second: "I code cool websites . . .",
+        third: "I like to Design UI/UX . . .",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
+    description: "I'm a student at NAIT studying Digital Media and IT with a focus on Web Design and Development. I'm easygoing and friendly, and love working with people. I hope we can work together soon",
     // your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
     your_img_url: jas_pic,
 };
