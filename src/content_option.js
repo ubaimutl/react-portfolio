@@ -1,7 +1,7 @@
 // import logo1 from "./assets/images/logo2.png";
 import jas_pic from "./assets/images/jas_pic.png";
 
-const logotext = "J Singh";
+const logotext = "JS Singh" ;
 const meta = {
     title: "Jaskirat Singh",
     description: "I’m Jaskirat Singh Web Designer and Developer _ Full stack devloper,currently working in Berlin",
@@ -22,60 +22,65 @@ animated: {
 
 const dataabout = {
     title: "abit about my self",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis dolor id ligula semper elementum feugiat pretium nulla. Nunc non commodo dolor. Nunc mollis dignissim facilisis. Morbi ut magna ultricies.",
+    aboutme: "I'm Jaskirat Singh, an aspiring web and UI/UX designer hailing from Edmonton. I'm passionate about crafting designs that seamlessly blend functionality and aesthetics. After all, what good is a design if it's not only functional but also visually captivating? I aim to strike that perfect balance in my work, always with the support of a talented team.Currently, I'm pursuing my education at NAIT in the Digital Media and IT program, specializing in Web Design and Development.While I may be relatively new to the field, I've always had an innate appreciation for exceptional design. I hope that my work reflects the dedication I've poured into mastering this new, exciting world and offers a fresh perspective to the design landscape.",
 };
-const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
-    },
-    {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
-    },
-];
+// const worktimeline = [{
+//         jobtitle: "Designer of week",
+//         where: "YAdfi",
+//         date: "2020",
+//     },
+//     {
+//         jobtitle: "Designer of week",
+//         where: "Jamalya",
+//         date: "2019",
+//     },
+//     {
+//         jobtitle: "Designer of week",
+//         where: "ALquds",
+//         date: "2019",
+//     },
+// ];
 
 const skills = [{
-        name: "Python",
-        value: 90,
-    },
-    {
-        name: "Djano",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
+        name: "HTML/CSS",
+        value: 95,
     },
     {
         name: "React",
-        value: 60,
+        value: 80,
+    },
+    {
+        name: "Javascript",
+        value: 90,
+    },
+    {
+        name: "Figma",
+        value: 95,
     },
     {
         name: "Jquery",
-        value: 85,
+        value: 70,
     },
 ];
 
-const services = [{
-        title: "UI & UX Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+const services = [
+    {
+      title: "Kite Fly",
+      description: "Kite flying is my cherished passion, a colorful symphony in the open sky. I love soaring kites with friends, competing to see whose kite can reach greater heights and distances, creating lasting memories of shared laughter and friendly competition.",
+      image: "kite_fly.webp",
     },
     {
-        title: "Mobile Apps",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      title: "Chess",
+      description: "I have a deep love for chess, a game that has been a part of my life since high school. I take pride in having won prizes during those days, and I continue to enjoy the strategic challenges it offers.",
+      image: "chess.webp",
     },
     {
-        title: "Wordpress Design",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum sollicitudin.",
+      title: "Fun Coding",
+      description: "I have a passion for fun coding, where I constantly explore, build, and learn. It's a hobby that allows me to create new things and dive into the exciting world of programming.Recently, I created a weather app using JavaScript that provides real-time weather updates, showcasing my coding skills and enthusiasm for building practical applications.",
+      image: "cod.webp",
     },
-];
+  ];
+  
 
 const dataportfolio = [{
         img: "https://picsum.photos/400/?grayscale",
@@ -141,14 +146,14 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
-    YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    YOUR_EMAIL: "sjaskirat247@gmail.com",
+    YOUR_FONE: "(780)992-3421",
+    description: "Feel free to reach out and let's work together on an exciting project! Whether you have an idea in mind or need some help, I'm here to make it happen. Whether you want to leave a feedback on my projects, I'm all ears.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_gla9wp2",
+    YOUR_TEMPLATE_ID: "template_chi9pmq",
+    YOUR_PUBLIC_KEY: "B81GKOSVTay74X5hD",
 };
 
 const socialprofils = {
@@ -161,7 +166,7 @@ export {
     meta,
     dataabout,
     dataportfolio,
-    worktimeline,
+    // worktimeline,
     skills,
     services,
     introdata,

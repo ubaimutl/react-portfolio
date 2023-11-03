@@ -94,3 +94,11 @@ code {
 .color_sec {
     color: var(--secondary-color);
 }
+
+/* .service__content{
+    display: flex;
+} */
+.service__image img{
+   max-width: 40%;
+   margin-bottom: 1rem;
+}

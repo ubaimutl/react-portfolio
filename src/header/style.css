@@ -205,3 +205,6 @@
     margin-right: 10px;
     text-decoration: none;
 }
+.navbar-brand img{
+    width: 40%;
+}
