@@ -1,16 +1,17 @@
 .po_items_ho {
+    /* Keep your existing styles for po_items_ho */
     column-width: 15em;
     -moz-column-width: 15em;
     -webkit-column-width: 15em;
     column-gap: 4rem;
     -moz-column-gap: 4rem;
+    display: contents;
     -webkit-column-gap: 4rem;
 }
 
 .po_item {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+    /* Remove the styles for horizontal layout */
+    display: flex;
     margin: 0.5rem auto;
     position: relative;
     background: var(--secondary-color);
@@ -19,10 +20,12 @@
     transition: 0.3s ease;
     font-size: 0;
     min-height: 300px;
+    width: 100%;
+
 }
 
 .po_item img {
-    max-width: 100%;
+    max-width: 50%;
 }
 
 .po_item .content {
@@ -78,3 +81,67 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+/* new code */
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; 
+  }
+  
+  .po-item {
+    display: flex; 
+    margin-bottom: 3rem;
+    
+
+  }
+  
+  .image-container {
+    flex: 1;
+    width: 100%; 
+    display: flex;
+    justify-content: end;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    flex: 1;
+    width: 100%; 
+    padding: 0 20px; 
+  }
+  
+  .content p {
+    margin: 0;
+  }
+
+  .content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Change the text color to white */
+    background-color: #007bff; /* Add a blue background color */
+    padding: 10px 20px; /* Increase padding for a larger button */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+    display: inline-block;
+  }
+  
+  .content a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+  }
+  
+  .content-viewbtn {
+    margin-top: 1rem;
+    max-width: 10rem;
+  }
+  
+  /* Optional: Center the button horizontally */
+  .content a {
+    margin: 0 auto;
+  }
+  

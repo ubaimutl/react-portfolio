@@ -82,67 +82,71 @@ const services = [
   ];
   
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+  const dataportfolio = [
+    {
+        img: "choc_img.webp",
+        heading: "Chocolate Business",
+        description: "I designed and created the chocolate-selling website with a vision to combine my passion for delectable chocolates and my growing interest in web development.With the use of HTML and CSS, I aimed to make the website not just a place to buy chocolates but an online chocolate haven, engaging visitors and evoking their cravings.Constructive feedback from users played a significant role in fine-tuning the website, and I'm continuously working to enhance the user experience.",
+        link: "https://chocolates-business-site.netlify.app/",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        img: "tail_img.webp",
+        heading: "Web Dashboard (Tailwind CSS)",
+        description: "I embarked on a journey to create a team management platform, inspired by the simplicity and effectiveness of tools like Monday.com. Crafted with a blend of Tailwind CSS, JavaScript, HTML, and CSS, my objective was clear: to design a user-friendly interface that promotes seamless collaboration and efficient task management. With a deep commitment to user experience, I diligently incorporated feedback from individuals and teams who shared their insights and needs. The result is a platform that strives to make work feel more human, intuitive, and productive.",
+        link: "https://web-dashboard-tailwind.netlify.app/",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+        img: "bd_ecommerce.webp",
+        heading: "Bedding Desire E-Commerce",
+        description: "It is an ecommerce website that brings the world of fabrics and bedsheets to your fingertips. Designed using WordPress, the platform was born from the idea of making the online shopping experience as user-friendly as possible.Primary objective was to create a website that not only offers a diverse range of high-quality fabrics and bedsheets but also ranks among the top results on search engines. With a strong focus on SEO skills, we worked diligently to ensure that BeddingDesire.ca appears prominently in search engine results, making it easier for our customers to find what they desire. My efforts have been successful, and our client is delighted with the outcome.",
+        link: "https://beddingdesire.ca/",
+    }
+    // {
+    //     img: "https://picsum.photos/400/600/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
+    // {
+    //     img: "https://picsum.photos/400/300/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
+    // {
+    //     img: "https://picsum.photos/400/700/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
 
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+    // {
+    //     img: "https://picsum.photos/400/600/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
+    // {
+    //     img: "https://picsum.photos/400/300/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
+    // {
+    //     img: "https://picsum.photos/400/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
+    // {
+    //     img: "https://picsum.photos/400/550/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
+    // {
+    //     img: "https://picsum.photos/400/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
+    // {
+    //     img: "https://picsum.photos/400/700/?grayscale",
+    //     description: "The wisdom of life consists in the elimination of non-essentials.",
+    //     link: "#",
+    // },
 ];
 
 const contactConfig = {
