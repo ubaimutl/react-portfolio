@@ -86,8 +86,7 @@
 
 .portfolio-container {
     display: flex;
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; 
+    flex-direction: column; 
   }
   
   .po-item {
@@ -101,7 +100,7 @@
     flex: 1;
     width: 100%; 
     display: flex;
-    justify-content: end;
+    justify-content: right;
   }
   
   img {
@@ -122,17 +121,17 @@
   .content a {
     text-decoration: none;
     font-weight: bold;
-    color: #fff; /* Change the text color to white */
-    background-color: #007bff; /* Add a blue background color */
-    padding: 10px 20px; /* Increase padding for a larger button */
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+    color: #fff; 
+    background-color: #007bff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, transform 0.2s;
     display: inline-block;
   }
   
   .content a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight scale on hover */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
   }
   
   .content-viewbtn {
