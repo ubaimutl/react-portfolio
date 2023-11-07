@@ -117,7 +117,7 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com/sjaskirat247",
-    linkedin: "www.linkedin.com/in/jaskirat-singh99"
+    linkedin: "https://www.linkedin.com/in/jaskirat-singh99/"
 };
 export {
     meta,
