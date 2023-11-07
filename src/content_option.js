@@ -21,9 +21,14 @@ animated: {
 };
 
 const dataabout = {
-    title: "abit about my self",
-    aboutme: "I'm Jaskirat Singh, an aspiring web and UI/UX designer hailing from Edmonton. I'm passionate about crafting designs that seamlessly blend functionality and aesthetics. After all, what good is a design if it's not only functional but also visually captivating? I aim to strike that perfect balance in my work, always with the support of a talented team.Currently, I'm pursuing my education at NAIT in the Digital Media and IT program, specializing in Web Design and Development.While I may be relatively new to the field, I've always had an innate appreciation for exceptional design. I hope that my work reflects the dedication I've poured into mastering this new, exciting world and offers a fresh perspective to the design landscape.",
+    title: "A bit about myself",
+    aboutme: "I'm Jaskirat Singh, an aspiring web and UI/UX designer hailing from Edmonton. I'm passionate about crafting designs that seamlessly blend functionality and aesthetics. After all, what good is a design if it's not only functional but also visually captivating? I aim to strike that perfect balance in my work, always with the support of a talented team.",
+    
+    aboutme2: "Currently, I'm pursuing my education at NAIT in the Digital Media and IT program, specializing in Web Design and Development.While I may be relatively new to the field, I've always had an innate appreciation for exceptional design. I hope that my work reflects the dedication I've poured into mastering this new, exciting world and offers a fresh perspective to the design landscape.",
+
 };
+
+
 // const worktimeline = [{
 //         jobtitle: "Designer of week",
 //         where: "YAdfi",
@@ -65,7 +70,7 @@ const skills = [{
 
 const services = [
     {
-      title: "Kite Fly",
+      title: "Kite Flying",
       description: "Kite flying is my cherished passion, a colorful symphony in the open sky. I love soaring kites with friends, competing to see whose kite can reach greater heights and distances, creating lasting memories of shared laughter and friendly competition.",
       image: "kite_fly.webp",
     },
