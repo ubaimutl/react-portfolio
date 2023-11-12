@@ -12,7 +12,7 @@ const introdata = {
 
 animated: {
         first: "I love coding . . .",
-        second: "I code cool websites . . .",
+        second: "I code Stunning websites . . .",
         third: "I like to Design UI/UX . . .",
     },
     description: "I'm a student at NAIT studying Digital Media and IT with a focus on Web Design and Development. I'm easygoing and friendly, and love working with people. I hope we can work together soon",
