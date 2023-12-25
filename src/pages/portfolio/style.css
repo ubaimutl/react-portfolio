@@ -136,7 +136,24 @@
   
   .content-viewbtn {
     margin-top: 1rem;
-    max-width: 10rem;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .po-item {
+      display: unset; 
+      margin-bottom: 3rem;
+    }
+
+    .image-container{
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+    .content-viewbtn{
+      text-align: center;
+    }
+    .content a{
+      padding: 1rem 5rem;
+    }
   }
   
   /* Optional: Center the button horizontally */
