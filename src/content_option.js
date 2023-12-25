@@ -105,8 +105,19 @@ const services = [
         heading: "Bedding Desire E-Commerce",
         description: "It is an ecommerce website that brings the world of fabrics and bedsheets to your fingertips. Designed using WordPress, the platform was born from the idea of making the online shopping experience as user-friendly as possible.Primary objective was to create a website that not only offers a diverse range of high-quality fabrics and bedsheets but also ranks among the top results on search engines. With a strong focus on SEO skills, we worked diligently to ensure that BeddingDesire.ca appears prominently in search engine results, making it easier for our customers to find what they desire. My efforts have been successful, and our client is delighted with the outcome.",
         link: "https://beddingdesire.ca/",
+    },
+    {
+        img: "registration.webp",
+        heading: "Regstration Form",
+        description: "It features a simple and effective registration form for dog care services. Developed using basic HTML and CSS, the design is clean and user-friendly, prioritizing ease of use for visitors. The form is thoughtfully structured to capture essential information, ensuring a seamless registration process for individuals seeking dog care services. With a minimalist yet visually appealing style, the website provides a straightforward and pleasant experience for users interested in signing up. The combination of basic HTML for structure and CSS for styling results in a functional and aesthetically pleasing registration form that serves its purpose with clarity and simplicity.",
+        link: "https://dogcare-registration-form.netlify.app/",
+    },
+    {
+        img: "cultivate.webp",
+        heading: "My First Bootstrap Site",
+        description: "This project showcases your growing proficiency in web development using Bootstrap, a powerful front-end framework. The website embodies a clean and responsive design, highlighting your commitment to creating a user-friendly experience. Leveraging Bootstrap's grid system, components, and styling, you've successfully crafted a platform for a crops cultivation business that is both visually appealing and functionally effective. The seamless integration of Bootstrap's features demonstrates your ability to harness modern web development tools to build dynamic and responsive websites. This project is a testament to your evolving skills and marks an important milestone in your journey as a web developer.",
+        link: "https://crops-cultivation-business.netlify.app/",
     }
-
 ];
 
 const contactConfig = {
@@ -122,7 +133,8 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com/sjaskirat247",
-    linkedin: "https://www.linkedin.com/in/jaskirat-singh99/"
+    linkedin: "https://www.linkedin.com/in/jaskirat-singh99/",
+    youtube: "https://www.youtube.com/channel/UCyDwR9vcUD0JCPQlloTtDZQ"
 };
 export {
     meta,

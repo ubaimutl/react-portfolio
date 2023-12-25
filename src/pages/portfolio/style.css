@@ -141,7 +141,7 @@
   @media screen and (max-width: 768px) {
     .po-item {
       display: unset; 
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
     }
 
     .image-container{
