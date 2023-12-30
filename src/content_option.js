@@ -117,6 +117,26 @@ const services = [
         heading: "My First Bootstrap Site",
         description: "This project showcases your growing proficiency in web development using Bootstrap, a powerful front-end framework. The website embodies a clean and responsive design, highlighting your commitment to creating a user-friendly experience. Leveraging Bootstrap's grid system, components, and styling, you've successfully crafted a platform for a crops cultivation business that is both visually appealing and functionally effective. The seamless integration of Bootstrap's features demonstrates your ability to harness modern web development tools to build dynamic and responsive websites. This project is a testament to your evolving skills and marks an important milestone in your journey as a web developer.",
         link: "https://crops-cultivation-business.netlify.app/",
+    },
+    {
+        img: "weather.webp",
+        heading: "Weather App Built in React",
+        description: "In the development of the Current Weather Display App, I implemented a robust solution that effectively demonstrates my proficiency in JavaScript, NPM, Node.js, and parcel usage. The project integrates the OpenWeatherMap API, requiring the use of an API key for data retrieval. I successfully installed and configured Bootstrap and parcel. The codebase adheres to best practices, ensuring the absence of unnecessary folders like node_modules and parcel-cache. Two essential functions, getWeather and renderWeather, were implemented in separate files as instructed, showcasing a solid understanding of modular code organization and usage of JavaScript promises. The DOM API manipulation was skillfully executed, dynamically updating the weather information on the page upon submitting a city search. Overall, the project achieved a high level of proficiency, meeting or exceeding the outlined criteria and demonstrating a strong command of JavaScript development practices.",
+        link: "https://weather66.netlify.app/",
+    },
+    {
+        img: "fetchbooks.webp",
+        heading: "Add your favourite Books ",
+        description: "I successfully developed a React application that demonstrates a comprehensive understanding of React's fundamental concepts, including events, state management, and conditionals. The project employs Next.js and leverages the Material-UI library for a visually appealing and responsive design. I ensured the correct implementation of useState hooks, stateful variables, and event handling in the form. The application dynamically updates the book list based on user inputs and gracefully handles form submissions, resetting input fields upon successful additions. Additionally, I implemented error handling, displaying an alert message when attempting to submit the form with empty fields. Overall, this showcases my proficiency in React development, emphasizing clean code practices and a strong grasp of core React concepts.",
+        link: "https://fetchbooks.netlify.app/",
+    },
+    {
+        img: "authorbook.webp",
+        heading: "Fetching Author Publications ",
+        description: "I showcased advanced skills in React, Pages, and Next.js. The project centered on dynamic routing, utilizing the Internet Archives Open Library API to display book covers. Clicking the 'View Details' button for a favorite author's book dynamically rendered a new page with a URL path like '/book/bookIdHere,' leveraging Dynamic Routes. Key tasks encompassed creating a Navbar link for efficient Home page navigation and implementing a 'TableCell' with a 'Button' in the Book Table to dynamically navigate to the 'book' page ('/book/SOMEWORKID') using the Next Router.",
+        
+        description: "The intricately designed book page efficiently extracted bookId parameters, initiated asynchronous calls to the Open Library Books API, and rendered Medium Covers using MUI components like Container, Grid, Typography, ImageList, and ImageListItem. Maintaining a high standard of code formatting and style, adhering to best practices, and undergoing linting for error-free execution, the project received a commendable grade, demonstrating proficiency in completing tasks to a professional standard.",
+        link: "https://authorbooklibrary.netlify.app/",
     }
 ];
 
