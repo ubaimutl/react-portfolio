@@ -130,13 +130,12 @@ const services = [
         description: "I successfully developed a React application that demonstrates a comprehensive understanding of React's fundamental concepts, including events, state management, and conditionals. The project employs Next.js and leverages the Material-UI library for a visually appealing and responsive design. I ensured the correct implementation of useState hooks, stateful variables, and event handling in the form. The application dynamically updates the book list based on user inputs and gracefully handles form submissions, resetting input fields upon successful additions. Additionally, I implemented error handling, displaying an alert message when attempting to submit the form with empty fields. Overall, this showcases my proficiency in React development, emphasizing clean code practices and a strong grasp of core React concepts.",
         link: "https://fetchbooks.netlify.app/",
     },
-    {
-        img: "authorbook.webp",
-        heading: "Fetching Author Publications ",
-        description: "I showcased advanced skills in React, Pages, and Next.js. The project centered on dynamic routing, utilizing the Internet Archives Open Library API to display book covers. Clicking the 'View Details' button for a favorite author's book dynamically rendered a new page with a URL path like '/book/bookIdHere,' leveraging Dynamic Routes. Key tasks encompassed creating a Navbar link for efficient Home page navigation and implementing a 'TableCell' with a 'Button' in the Book Table to dynamically navigate to the 'book' page ('/book/SOMEWORKID') using the Next Router.",
-      
-        link: "https://authorbooklibrary.netlify.app/",
-    }
+    // {
+    //     img: "authorbook.webp",
+    //     heading: "Fetching Author Publications ",
+    //     description: "I showcased advanced skills in React, Pages, and Next.js. The project centered on dynamic routing, utilizing the Internet Archives Open Library API to display book covers. Clicking the 'View Details' button for a favorite author's book dynamically rendered a new page with a URL path like '/book/bookIdHere,' leveraging Dynamic Routes. Key tasks encompassed creating a Navbar link for efficient Home page navigation and implementing a 'TableCell' with a 'Button' in the Book Table to dynamically navigate to the 'book' page ('/book/SOMEWORKID') using the Next Router.",
+    //     link: "https://authorbooklibrary.netlify.app/",
+    // }
 ];
 
 const contactConfig = {
