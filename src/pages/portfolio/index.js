@@ -31,6 +31,8 @@ export const Portfolio = () => {
                 <div className="content">
                   <h2>{data.heading}</h2>
                   <p>{data.description}</p>
+                  <br></br>
+                  <p>{data.description2}</p>
                   <div className="content-viewbtn">
                     <a href={data.link}>View Project</a>
                   </div>
