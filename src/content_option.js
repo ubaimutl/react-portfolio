@@ -134,8 +134,7 @@ const services = [
         img: "authorbook.webp",
         heading: "Fetching Author Publications ",
         description: "I showcased advanced skills in React, Pages, and Next.js. The project centered on dynamic routing, utilizing the Internet Archives Open Library API to display book covers. Clicking the 'View Details' button for a favorite author's book dynamically rendered a new page with a URL path like '/book/bookIdHere,' leveraging Dynamic Routes. Key tasks encompassed creating a Navbar link for efficient Home page navigation and implementing a 'TableCell' with a 'Button' in the Book Table to dynamically navigate to the 'book' page ('/book/SOMEWORKID') using the Next Router.",
-        
-        description: "The intricately designed book page efficiently extracted bookId parameters, initiated asynchronous calls to the Open Library Books API, and rendered Medium Covers using MUI components like Container, Grid, Typography, ImageList, and ImageListItem. Maintaining a high standard of code formatting and style, adhering to best practices, and undergoing linting for error-free execution, the project received a commendable grade, demonstrating proficiency in completing tasks to a professional standard.",
+      
         link: "https://authorbooklibrary.netlify.app/",
     }
 ];
