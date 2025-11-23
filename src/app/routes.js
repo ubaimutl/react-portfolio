@@ -1,12 +1,15 @@
 import React from "react";
-import { Route, Routes} from "react-router-dom";
-import withRouter from "../hooks/withRouter"
+import { Route, Routes } from "react-router-dom";
+import withRouter from "../hooks/withRouter";
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
+import { CoinEntries } from "../components/CoinEntries.js";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+// import CoinStats from "../components/CoinStats/index.js";
+import { Entries } from "../pages/entries/index.js";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
@@ -24,6 +27,7 @@ const AnimatedRoutes = withRouter(({ location }) => (
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/entries" element={<Entries />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>

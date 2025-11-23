@@ -1,0 +1,340 @@
+/* ================================
+   Global theme + shared variables
+   ================================ */
+:root {
+  --tx: 0px;
+  --ty: 0px;
+  /* Shared dark glass tint used by panels AND the whole page */
+  --panel-bg: rgba(0, 0, 0, 0.45);
+}
+
+/* Global dark base so all sections inherit the same look */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: #000; /* fallback behind gradient */
+  color: #fff;
+}
+
+/* ============================================
+   Site-wide animated gradient (behind everything)
+   You can use either:
+   <div class="page-bg animated-gradient" />
+   or (existing) <div class="hero__bg animated-gradient" />
+   Both now behave the same.
+   ============================================ */
+.page-bg,
+.hero__bg {
+  position: fixed;
+  inset: 0;
+  z-index: -4;
+  pointer-events: none; /* purely visual layer */
+  opacity: 0.6;
+}
+
+.page-bg::after,
+.hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--panel-bg); /* global glass tint */
+}
+
+/* Optional soft glow; set to none if you want perfectly uniform color */
+.page-spotlight,
+.hero__spotlight {
+  position: fixed;
+  inset: -160px;
+  z-index: -3;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 35% 30%,
+    rgba(255, 255, 255, 0.12),
+    transparent 60%
+  );
+  filter: blur(60px);
+  border-radius: 9999px;
+  transform: translate(var(--tx), var(--ty));
+}
+
+/* Animated gradient utility */
+.animated-gradient {
+  background: linear-gradient(
+    115deg,
+    #0f172a 0%,
+    #0b3c5d 25%,
+    #0a4d68 40%,
+    #062e3f 60%,
+    #0f172a 100%
+  );
+  background-size: 200% 200%;
+  animation: gradientShift 14s ease-in-out infinite alternate;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ============================================
+   Global symbol / coins layer (now page-wide)
+   ============================================ */
+
+/* Big faint ticker text now behind the whole page */
+.hero__backboard {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  z-index: -2;
+  pointer-events: none;
+}
+.hero__backboard h1 {
+  font-size: clamp(72px, 20vw, 240px);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.06);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Floating coins, also full-page now */
+.coins-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.coin {
+  position: absolute;
+  bottom: -120px;
+  opacity: 0.7;
+}
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.15);
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   App shell & glass panels to match hero styling
+   ============================================ */
+.app-shell {
+  padding: 24px;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; /* above background layers */
+}
+.panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--panel-bg);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+.panel__head {
+  padding: 14px 16px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.panel__body {
+  padding: 10px 12px;
+}
+.panel__body--fill {
+  height: 100%;
+  width: 100%;
+  padding: 0; /* let charts fill completely */
+  display: flex;
+}
+.panel__body--fill > * {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* ============================================
+   Split layout (bar left 30%, candle right 70%)
+   ============================================ */
+.split-panels {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;
+  /* You can control the equal height here if desired:
+     --panel-h: 520px; */
+}
+.panel--bar {
+  flex: 0 0 30%;
+  min-width: 260px;
+}
+.panel--candle {
+  flex: 0 0 70%;
+}
+
+/* Make panels equal height visually by stretching containers */
+.split-panels .panel {
+  display: flex;
+  flex-direction: column;
+}
+.split-panels .panel__body {
+  flex: 1 1 auto;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 960px) {
+  .split-panels {
+    flex-direction: column;
+  }
+  .panel--bar,
+  .panel--candle {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+}
+
+/* ============================================
+   Hero section (top content, but background is global)
+   ============================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: visible; /* don't clip fixed layers anymore */
+  background: transparent; /* let global gradient + tint show through */
+  color: #fff;
+  isolation: isolate;
+  z-index: 1;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 96px 24px 128px;
+  text-align: center;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  backdrop-filter: blur(6px);
+  font-size: 14px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #34d399;
+  animation: pulse 1.4s infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+}
+.hero__title {
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 16px 0 0;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #34d399, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero__sub {
+  margin: 20px auto 0;
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+}
+.btn {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 16px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.reveal {
+  position: relative;
+  margin-top: 28px;
+  display: inline-block;
+}
+.reveal__panel {
+  position: absolute;
+  inset: auto 0 auto 0;
+  bottom: -92px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+.reveal__card {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.45s ease;
+  max-width: 560px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+.reveal:hover .reveal__card {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero__hint {
+  position: absolute;
+  inset: auto 0 20px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}

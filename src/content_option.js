@@ -1,5 +1,6 @@
 import myImage from "./assets/images/trader_portfolio_img.jpg";
 import cryptoImage from "./assets/images/crypto_coins.jpeg";
+import aiStrategy from "./assets/images/ai_strategy.jpg";
 import sentimentImage from "./assets/images/sentiment-analysis.webp";
 
 const logotext = "DAVID";
@@ -113,22 +114,9 @@ const dataportfolio = [
     link: "https://github.com/DavidGadyan/project_crypto_negative_cointegration",
   },
   {
-    img: "https://picsum.photos/400/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/600/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
-  },
-  {
-    img: "https://picsum.photos/400/300/?grayscale",
-    description:
-      "The wisdom of life consists in the elimination of non-essentials.",
-    link: "#",
+    img: aiStrategy,
+    description: "AI powered Crypto Strategy",
+    link: "/entries",
   },
 ];
 

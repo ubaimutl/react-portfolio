@@ -1,17 +1,19 @@
+/* --- Two-column grid: all items left, last one pinned to top-right --- */
 .po_items_ho {
-  column-width: 15em;
-  -moz-column-width: 15em;
-  -webkit-column-width: 15em;
-  column-gap: 4rem;
-  -moz-column-gap: 4rem;
-  -webkit-column-gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* left | right */
+  grid-auto-rows: 220px; /* base row height */
+  gap: 24px;
+  grid-auto-flow: row dense; /* backfill earliest gaps */
+  padding-bottom: 4rem; /* ⬅️ ensures visible bottom space */
 }
 
+/* By default, put items in the left column */
 .po_item {
-  display: inline-block;
+  grid-column: 1;
+  display: block;
   width: 100%;
   text-align: center;
-  margin: 0.5rem auto;
   position: relative;
   background: var(--secondary-color);
   padding: 6px;
@@ -21,16 +23,27 @@
   min-height: 200px;
 }
 
-.po_item img {
-  max-width: 100%;
+/* Make the *last* item a tall card starting at row 1 in the right column */
+.po_items_ho .po_item:last-child {
+  grid-column: 2;
+  grid-row: 1 / span 2; /* start at the very top */
 }
 
+/* Images fill cards */
+.po_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay / hover (unchanged) */
 .po_item .content {
   position: absolute;
-  height: 0;
-  width: 0;
   top: 50%;
   left: 50%;
+  height: 100%;
+  width: 100%;
   transform: translate(-50%, -50%);
   background: var(--overlay-color);
   z-index: 1;
@@ -38,18 +51,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  transition: 0.3s ease-in-out;
   opacity: 0;
   border: 1px solid black;
-}
-
-.po_item .content {
-  opacity: 0;
-  transition-delay: 1s;
-  transition: 0.3s ease;
   font-size: 20px;
+  transition: 0.3s ease;
+  transition-delay: 1s;
 }
 
 .po_item:hover {
@@ -59,10 +65,6 @@
 .po_item:hover .content {
   height: calc(100% - 30px);
   width: calc(100% - 30px);
-  opacity: 1;
-}
-
-.po_item:hover .content {
   opacity: 1;
   color: var(--secondary-color);
 }
@@ -77,4 +79,17 @@
 
 .po_item .content a:hover {
   text-decoration: none;
+}
+
+/* --- Responsive: stack on mobile --- */
+@media (max-width: 768px) {
+  .po_items_ho {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    margin-bottom: 1.5rem; /* keep a bit of space on mobile too */
+  }
+  .po_items_ho .po_item:last-child {
+    grid-column: 1;
+    grid-row: auto;
+  }
 }

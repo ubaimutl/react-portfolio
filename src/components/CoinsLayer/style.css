@@ -1,0 +1,200 @@
+:root {
+  --tx: 0px;
+  --ty: 0px;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  isolation: isolate;
+}
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+}
+.animated-gradient {
+  background: linear-gradient(
+    115deg,
+    #0f172a 0%,
+    #0b3c5d 25%,
+    #0a4d68 40%,
+    #062e3f 60%,
+    #0f172a 100%
+  );
+  background-size: 200% 200%;
+  animation: gradientShift 14s ease-in-out infinite alternate;
+}
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.hero__spotlight {
+  position: absolute;
+  inset: -160px;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 255, 255, 0.18),
+    transparent 60%
+  );
+  filter: blur(48px);
+  border-radius: 9999px;
+  transform: translate(var(--tx), var(--ty));
+}
+.hero__backboard {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.hero__backboard h1 {
+  font-size: clamp(72px, 20vw, 240px);
+  line-height: 0.9;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.06);
+  user-select: none;
+  pointer-events: none;
+}
+.coins-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.coin {
+  position: absolute;
+  bottom: -120px;
+  opacity: 0.7;
+}
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.15);
+    opacity: 0;
+  }
+}
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 96px 24px 128px;
+  text-align: center;
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px 12px;
+  border-radius: 9999px;
+  backdrop-filter: blur(6px);
+  font-size: 14px;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: #34d399;
+  animation: pulse 1.4s infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+}
+.hero__title {
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 16px 0 0;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #34d399, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero__sub {
+  margin: 20px auto 0;
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+}
+.btn {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 16px;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.reveal {
+  position: relative;
+  margin-top: 28px;
+  display: inline-block;
+}
+.reveal__panel {
+  position: absolute;
+  inset: auto 0 auto 0;
+  bottom: -92px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+}
+.reveal__card {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.45s ease;
+  max-width: 560px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+.reveal:hover .reveal__card {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero__hint {
+  position: absolute;
+  inset: auto 0 20px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
