@@ -16,7 +16,8 @@
     background: var(--secondary-color);
     padding: 6px;
     border: 1px solid var(--secondary-color);
-    transition: 0.3s ease;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
     font-size: 0;
     min-height: 300px;
 }
@@ -27,11 +28,9 @@
 
 .po_item .content {
     position: absolute;
-    height: 0;
-    width: 0;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.96);
     background: var(--overlay-color);
     z-index: 1;
     display: flex;
@@ -40,15 +39,9 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    transition: 0.3s ease-in-out;
+    transition: height 0.35s ease, width 0.35s ease, opacity 0.25s ease, transform 0.35s ease;
     opacity: 0;
     border: 1px solid black;
-}
-
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
     font-size: 20px;
 }
 
@@ -60,10 +53,7 @@
     height: calc(100% - 30px);
     width: calc(100% - 30px);
     opacity: 1;
-}
-
-.po_item:hover .content {
-    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
     color: var(--secondary-color);
 }
 
@@ -73,8 +63,11 @@
     padding: 4px 8px;
     text-align: center;
     font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
 }
 
-.po_item .content a:hover {
+.po_item .content a:hover,
+.po_item .content a:focus {
     text-decoration: none;
 }

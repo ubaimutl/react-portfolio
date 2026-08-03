@@ -1,37 +1,48 @@
 ### Description
 
-A simple portfolio template for developer/designers built with React. 
+A simple portfolio template for developers/designers built with React and Vite.
 
 ### [live preview](https://ubaimutl.github.io/react-portfolio/)
 
-[![react portfoiio](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
+[![](src/assets/images/react%20portfolio%20gif.gif)](https://ubaimutl.github.io/react-portfolio/)
 
 ### Features
 
-- Fully Responsive
-- Multi-Page Layout
-- Contact Form With EmailJs
-- React-Bootstrap
-- Edit Content From One Place
+* Fully Responsive
+* Multi-Page Layout
+* Contact Form With EmailJS
+* React-Bootstrap
+* Edit Content From One Place
 
 ### Setup
 
-Get the code
+Get the code 
+    
+    git clone https://github.com/ubaimutl/react-portfolio.git
 
-<pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
- 
-Install required dependencies
+Install required dependencies 
+    
+    npm install
 
-<pre>yarn install</pre>
+Start the server 
+    
+    npm run dev
 
+Create a production build 
+    
+    npm run build
 
-Start the server
+Preview the production build 
+    
+    npm run preview
 
-<pre>yarn start</pre>
+Check the code 
+    
+    npm run lint
 
 ### More
 
-Modify pages content in  `src/content_option.js`.
+Modify pages content in `src/content_option.js`.
 
 ### Thanks
 

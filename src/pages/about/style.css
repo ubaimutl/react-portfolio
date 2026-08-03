@@ -2,9 +2,16 @@
     margin-bottom: calc(3rem + 5.128vw)
 }
 
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--text-color);
+    --bs-table-border-color: color-mix(in srgb, var(--text-color) 18%, transparent);
+}
+
 .table td,
 .table th {
     color: var(--text-color);
+    background-color: transparent;
 }
 
 .t_border {
